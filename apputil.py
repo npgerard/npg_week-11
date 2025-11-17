@@ -96,6 +96,7 @@ def kmeans_timer(n, k, n_iter=5):
     average_time = total_time / n_iter
     return average_time
 
+
 # # testing kmeans_timer function
 # kmeans_timer_result = kmeans_timer(n=1000, k=5, n_iter=5)
 
