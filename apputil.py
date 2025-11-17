@@ -31,7 +31,7 @@ def kmeans(X, k=3):
     kmeans.fit(X)
 
     # return the labels and cluster centers
-    return kmeans.labels_, kmeans.cluster_centers_
+    return kmeans.cluster_centers_, kmeans.labels_
 
 
 
@@ -69,8 +69,8 @@ def kmeans_diamonds(n=1000, k=5):
     X = df_sample.values
 
     # Perform K-Means clustering
-    labels, centroids = kmeans(X, k=k)
-    return labels, centroids, df_sample
+    centroids, labels = kmeans(X, k=k)
+    return  centroids, labels#, df_sample
 
 
 # Exercise 3: kmeans timing
