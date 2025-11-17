@@ -54,7 +54,7 @@ def kmeans(X, k=3):
 
 
 # Exercise 2: K-Means on Diamonds Dataset
-def kmeans_diamond(n=1000, k=5):
+def kmeans_diamonds(n=1000, k=5):
     '''Performs K-Means clustering on the diamonds dataset.
     Samples n data points from the dataset.
     Results:
@@ -87,7 +87,7 @@ def kmeans_timer(n, k, n_iter=5):
         # set the start time
         start_time = time.time()
         # run the kmeans_diamond function
-        kmeans_diamond(n=n, k=k)
+        kmeans_diamonds(n=n, k=k)
         # record the end time
         end_time = time.time()
         # add the difference in the start and end time to the running total 
